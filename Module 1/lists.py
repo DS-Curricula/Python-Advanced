@@ -9,16 +9,19 @@ print(second_item)
 print(third_item)
 print(fourth_item)
 
-shopping_list = ["apples", "bananas", 3, 4.5, "oranges"]  # different data types
+shopping_list = ["apples", "bananas", 3, 4.5]  # different data types
 
 # Adding "oranges" to the end of the list
+shopping_list.append("oranges")
 print(shopping_list)
 
-# Adding "lemons to the third position of the list"
+# Adding "lemons" to the third position of the list
 shopping_list.insert(2, "lemons")
+
+#Now the list contains ["apples", "bananas", "lemons", 3, 4.5, "oranges"]
 print(shopping_list)
 
-# Removing data from "to_do_list
+# Removing data from "to_do_list"
 
 # Removing "research for biology" by specifying its value
 to_do_list.remove("research for biology")

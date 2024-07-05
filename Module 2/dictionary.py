@@ -1,11 +1,14 @@
 # Dictionary
 
-contact_info = {"Alice": "555-1234", "Bob": "555-5678"}
-print(contact_info)
-
+contact_info = {"Alice": "555-1234",
+                "Bob": "555-5678"
+                }
+#Create a variable called alice_phone and by using [] we can specify which key we want to access
 alica_phone = contact_info["Alice"]
+#Now let's print alice_phone
 print(alica_phone)
-# This will print the value of the key "Alice": that is 555-1234
+
+# Result will be "555-1234"
 
 # Update Alice's number
 contact_info["Alice"] = "555-6789"

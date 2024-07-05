@@ -35,10 +35,13 @@ print(to_do_list)
 
 # Update Values
 
+#Changing the first element (index 0 ) from "math homework" to "physics homework"
 to_do_list[0] = "physics homework"
-print(to_do_list)
+
+print(to_do_list) #Output: ['physics homework', 'clean the room']
 
 
+#2
 favorite_colors = ["red", "green", "blue", "yellow", "purple"]
 
 fourth_color = favorite_colors[3] #Accces the fourth color at index 3

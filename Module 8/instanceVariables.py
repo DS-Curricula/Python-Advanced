@@ -5,7 +5,7 @@ class Student:
         # Initialize instance variables (attributes) for name, age and course
         self.name = name
         self.age = age
-        self.course = course
+0        self.course = course
 
 
 #Create two instances of the Student class, providing values for the constructor parameteres

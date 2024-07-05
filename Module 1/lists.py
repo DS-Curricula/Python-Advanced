@@ -37,3 +37,9 @@ print(to_do_list)
 
 to_do_list[0] = "physics homework"
 print(to_do_list)
+
+
+favorite_colors = ["red", "green", "blue", "yellow", "purple"]
+
+fourth_color = favorite_colors[3] #Accces the fourth color at index 3
+print(fourth_color)

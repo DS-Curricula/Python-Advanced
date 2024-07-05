@@ -1,7 +1,7 @@
 class Vertebrate:
     def __init__(self, backbone=True):
         self.has_backbone = backbone
-    backbone = True
+
 
     def vertebrate_info(self):
         print("Vertebrates have a backbone.")

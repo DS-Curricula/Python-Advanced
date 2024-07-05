@@ -1,4 +1,4 @@
-#Conditionals
+# Conditionals
 
 age = 18
 
@@ -7,22 +7,21 @@ if age >= 18:
 else:
     print("You cannot vote yet.")
 
-#Output will be "You can vote".
+# Output will be "You can vote".
 
 
-#Nested Conditionals
+# Nested Conditionals
 
 temperature = 28
 
-if temperature >30:
+if temperature > 30:
     print("It's a hot day, stay hydrated")
-elif 20 <= temperature <=30:
+elif 20 <= temperature <= 30:
     print("The weather is pleasant")
 else:
     print("It's a cold day, bundle up")
 
-
-#Create a program that checks if a number is even or odd
+# Create a program that checks if a number is even or odd
 
 number = 7
 
@@ -31,13 +30,12 @@ if number % 2 == 0:
 else:
     print("The number is odd")
 
-
-#Create input for users
+# Create input for users
 
 user_input = input("Enter a number")
 number = int(user_input)
 
-#Check if the number is positive, negative or zero
+# Check if the number is positive, negative or zero
 
 if number > 0:
     print("The number is positive")

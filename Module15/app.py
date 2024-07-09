@@ -28,6 +28,7 @@ mean_temperature = df['temperature'].mean()
 print(f"The average temperature for the entire dataset is {mean_temperature:.2f} °C")
 
 # 2. Monthly Temperature:
+
 mean_temp_by_month = df.groupby(df["full_date"].dt.month)["temperature"].mean()
 print("\nThe mean temperature for each month is:\n", mean_temp_by_month)
 

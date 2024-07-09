@@ -5,7 +5,7 @@ def greet():  # Function definition
 greet()  # Call the function "greet", output: Hello World!
 
 
-# Define a function names greet_person which takes one parameter 'name'
+# Define a function named greet_person which takes one parameter 'name'
 def greet_person(name):
     # Print a greeting message with the provided name
     print("Hello,", name)

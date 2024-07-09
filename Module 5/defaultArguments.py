@@ -6,7 +6,7 @@ def greet_person(name, greeting="Hello"):
     return message
 
 
-# Call the "greet_person" function with the only the 'name' parameter provided using the default greeting
+# Call the "greet_person" function with only the 'name' parameter provided using the default greeting
 default_greeting = greet_person("Alice")
 
 # Call the "greet_person" function with both 'name' and 'greeting' parameters provided

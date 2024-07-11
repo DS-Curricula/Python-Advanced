@@ -46,3 +46,4 @@ if html:
         print(f"Name: {name}, Price: {price}")
 else:
     print("Failed to retrieve data from the website.")
+

@@ -18,7 +18,7 @@ print(shopping_list)
 # Adding "lemons" to the third position of the list
 shopping_list.insert(2, "lemons")
 
-#Now the list contains ["apples", "bananas", "lemons", 3, 4.5, "oranges"]
+# Now the list contains ["apples", "bananas", "lemons", 3, 4.5, "oranges"]
 print(shopping_list)
 
 # Removing data from "to_do_list"
@@ -35,14 +35,13 @@ print(to_do_list)
 
 # Update Values
 
-#Changing the first element (index 0 ) from "math homework" to "physics homework"
+# Changing the first element (index 0 ) from "math homework" to "physics homework"
 to_do_list[0] = "physics homework"
 
-print(to_do_list) #Output: ['physics homework', 'clean the room']
+print(to_do_list)  # Output: ['physics homework', 'clean the room']
 
-
-#2
+# 2
 favorite_colors = ["red", "green", "blue", "yellow", "purple"]
 
-fourth_color = favorite_colors[3] #Accces the fourth color at index 3
+fourth_color = favorite_colors[3]  # Accces the fourth color at index 3
 print(fourth_color)

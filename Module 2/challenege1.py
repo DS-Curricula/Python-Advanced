@@ -1,32 +1,29 @@
-alice = {
-    "name": "Alice",
-    "phone": "123-456-7890",
-    "email": "alice@example.com"
+# Create dictionaries for Jane and John to store contact information
+jane_contact = {
+    'name': 'Jane',
+    'phone': '123-456-7890',
+    'email': 'jane@example.com'
 }
 
-bob = {
-    "name": "Bob",
-    "phone": "987-654-0321",
-    "email": "bob@example.com"
+john_contact = {
+    'name': 'John',
+    'phone': '987-654-3210',
+    'email': 'john@example.com'
 }
 
-contacts = {"Alice": alice, "Bob": bob}
+# Create a contacts dictionary and add Jane and John
+contacts = {
+    'Jane': jane_contact,
+    'John': john_contact
+}
 
-# Printing Alice's Info
-print("Alice's Contact Information")
-print("Name:", contacts["Alice"]["name"])
-print("Phone:", contacts["Alice"]["phone"])
-print("Email:", contacts["Alice"]["email"])
+# Print Jane's contact information
+print("Jane's contact information:")
+print(contacts['Jane'])
 
-# Update Alice's phone number
-contacts["Alice"]["phone"] = "555-555-5555"
-print("Alice's Contact Information")
-print("Name:", contacts["Alice"]["name"])
-print("Phone:", contacts["Alice"]["phone"])
-print("Email:", contacts["Alice"]["email"])
+# Update Jane's phone number
+contacts['Jane']['phone'] = '111-222-3333'
 
-# Printing Bob's Info
-print("Bob's Contact Information")
-print("Name:", contacts["Bob"]["name"])
-print("Phone:", contacts["Bob"]["phone"])
-print("Email:", contacts["Bob"]["email"])
+# Print Jane's updated contact information
+print("\nJane's updated contact information:")
+print(contacts['Jane'])

@@ -34,3 +34,4 @@ def sum_list(numbers: List[int]) -> int:
 
 numbers: List[int] = [1, 2, 3]
 result: int = sum_list(numbers)
+print(result)

@@ -56,7 +56,15 @@ with open("example.txt", "a") as file:
     file.write("New data appended.")
 
 # Reading and Writing Binary Files
+
+data = b'This is some binary data'
+with open('example.bin', 'wb') as file:
+    file.write(data)
+
 with open('example.bin', 'rb') as binary_file:
     data = binary_file.read()
+
+
+
 
 

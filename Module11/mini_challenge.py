@@ -1,22 +1,30 @@
 import datetime
 
-# Getting the current date and time
-now = datetime.datetime.now()
-print("Current Date and Time:", now)
+# 1. Get the current date and time
+current_datetime = datetime.datetime.now()
 
-# Creating a specific date
-specific_date = datetime.date(2023, 8, 5)
-print("Specific Date:", specific_date)
+# Print the individual components
+print("Year:", current_datetime.year)
+print("Month:", current_datetime.month)
+print("Day:", current_datetime.day)
+print("Hour:", current_datetime.hour)
+print("Minute:", current_datetime.minute)
+print("Second:", current_datetime.second)
+print("Microsecond:", current_datetime.microsecond)
 
-# Creating a specific time
-specific_time = datetime.time(14, 30, 45)
-print("Specific Time:", specific_time)
+# 2. Calculate the date 100 days in the future
+future_date = current_datetime + datetime.timedelta(days=100)
+print("Date 100 days in the future:", future_date)
 
-# Creating a specific datetime
-specific_datetime = datetime.datetime(2023, 8, 5, 14, 30, 45)
-print("Specific Datetime:", specific_datetime)
+# Calculate the date 100 days in the past
+past_date = current_datetime - datetime.timedelta(days=100)
+print("Date 100 days in the past:", past_date)
 
-# Adding 10 days to the current date
-delta = datetime.timedelta(days=10)
-future_date = now + delta
-print("Future Date:", future_date)
+# 3. Create a datetime object for September 1, 2024, at 08:00:00
+specific_datetime = datetime.datetime(2024, 9, 1, 8, 00, 0)
+
+# Write the specific datetime to a file
+with open('formatted_dates.txt', 'w') as file:
+    file.write("Specific datetime: " + specific_datetime.strftime('%Y-%m-%d %H:%M:%S') + '\n')
+
+print("Specific datetime written to 'formatted_dates.txt'.")

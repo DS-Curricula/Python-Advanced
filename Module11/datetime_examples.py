@@ -29,12 +29,19 @@ print("Minute:", time_object.minute)
 print("Second:", time_object.second)
 print("Microsecond:", time_object.microsecond)
 
-
 # Get a specific date
 specific_date = datetime.date(2024, 4, 5)
+print(specific_date)
 
 # Get a specific time
 specific_time = datetime.time(12, 30, 0)
+
+# Create a datetime object
+specific_datetime = datetime.datetime(2024, 1, 1, 14, 30, 0)
+
+# Format the datetime object as a string
+formatted_date = specific_datetime.strftime('%Y-%m-%d %H:%M:%S')
+print(formatted_date)  # Output: 2024-01-01 14:30:00
 
 # Create a timedelta representing a duration of time
 duration = datetime.timedelta(days=5, hours=3)

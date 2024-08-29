@@ -33,7 +33,8 @@ print("Intro text:", intro_text)  # Output: Beautiful Soup makes web scraping ea
 div_content = soup.find('div', id='content')
 links = div_content.find_all('a')
 for link in links:
-    print("Link:", link['href'])  # Output: Link: http://example.com/page1, Link: http://example.com/page2, Link: http://example.com/page3
+    print("Link:", link['href'])  # Output: Link: http://example.com/page1, Link: http://example.com/page2,
+    # Link: http://example.com/page3
 
 # Example 4: Handling nested elements and siblings
 first_link = soup.find('a')

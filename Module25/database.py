@@ -1,10 +1,13 @@
 import sqlite3
 from models import Movie, MovieCreate
 
+
 def create_connection():
     """Creates a connection to the SQLite database."""
-    connection = sqlite3.connect("example.db")
+    connection = sqlite3.connect("movies.db")
+    connection.row_factory = sqlite3.Row
     return connection
+
 
 def create_table():
     """Creates the movies table in the database if it doesn't exist."""
@@ -20,7 +23,9 @@ def create_table():
     connection.commit()
     connection.close()
 
+
 create_table()
+
 
 def create_movie(movie: MovieCreate) -> int:
     """
@@ -40,6 +45,7 @@ def create_movie(movie: MovieCreate) -> int:
     connection.close()
     return movie_id
 
+
 def read_movies():
     """
     Retrieves all movies from the database.
@@ -54,6 +60,7 @@ def read_movies():
     connection.close()
     movies = [Movie(id=row[0], title=row[1], director=row[2]) for row in rows]
     return movies
+
 
 def read_movie(movie_id: int):
     """
@@ -73,7 +80,8 @@ def read_movie(movie_id: int):
     connection.close()
     if row is None:
         return None
-    return Movie(id=row[id], title=row["title"], director=row["directory"])
+    return Movie(id=row["id"], title=row["title"], director=row["director"])
+
 
 def update_movie(movie_id: int, movie: MovieCreate) -> bool:
     """
@@ -93,6 +101,7 @@ def update_movie(movie_id: int, movie: MovieCreate) -> bool:
     updated = cursor.rowcount
     connection.close()
     return updated > 0
+
 
 def delete_movie(movie_id: int) -> bool:
     """
